@@ -1,0 +1,35 @@
+body {
+  font-family: "Helvetica Neue"
+}
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+.place_canvas {
+  width: 1024px;
+  height: 768px;
+}
+
+.place_pixel {
+  width: 4px;
+  height: 4px;
+}
+
+.pixel_0 { background-color: "#FFFFFF"; }
+.pixel_1 { background-color: "#C0C0C0"; }
+.pixel_2 { background-color: "#808080"; }
+.pixel_3 { background-color: "#000000"; }
+.pixel_4 { background-color: "#FF0000"; }
+.pixel_5 { background-color: "#800000"; }
+.pixel_6 { background-color: "#FFFF00"; }
+.pixel_7 { background-color: "#808000"; }
+.pixel_8 { background-color: "#00FF00"; }
+.pixel_9 { background-color: "#008000"; }
+.pixel_a { background-color: "#00FFFF"; }
+.pixel_b { background-color: "#008080"; }
+.pixel_c { background-color: "#0000FF"; }
+.pixel_d { background-color: "#000080"; }
+.pixel_e { background-color: "#FF00FF"; }
+.pixel_f { background-color: "#800080"; }
