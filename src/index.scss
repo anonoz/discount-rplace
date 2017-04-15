@@ -2,34 +2,63 @@ body {
   font-family: "Helvetica Neue"
 }
 
+header {
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   width: 1024px;
 }
 
 .place_canvas {
-  width: 1024px;
-  height: 768px;
+  width: 768px;
+  height: 576px;
+  line-height: 0px;
+  margin: 0 auto;
 }
 
 .place_pixel {
   width: 4px;
   height: 4px;
+  display: inline-block;
+  margin: 0px;
+  line-height: 0px;
+  float: left;
 }
 
-.pixel_0 { background-color: "#FFFFFF"; }
-.pixel_1 { background-color: "#C0C0C0"; }
-.pixel_2 { background-color: "#808080"; }
-.pixel_3 { background-color: "#000000"; }
-.pixel_4 { background-color: "#FF0000"; }
-.pixel_5 { background-color: "#800000"; }
-.pixel_6 { background-color: "#FFFF00"; }
-.pixel_7 { background-color: "#808000"; }
-.pixel_8 { background-color: "#00FF00"; }
-.pixel_9 { background-color: "#008000"; }
-.pixel_a { background-color: "#00FFFF"; }
-.pixel_b { background-color: "#008080"; }
-.pixel_c { background-color: "#0000FF"; }
-.pixel_d { background-color: "#000080"; }
-.pixel_e { background-color: "#FF00FF"; }
-.pixel_f { background-color: "#800080"; }
+.pixel_0 { background-color: #FFFFFF; }
+.pixel_1 { background-color: #C0C0C0; }
+.pixel_2 { background-color: #808080; }
+.pixel_3 { background-color: #000000; }
+.pixel_4 { background-color: #FF0000; }
+.pixel_5 { background-color: #800000; }
+.pixel_6 { background-color: #FFFF00; }
+.pixel_7 { background-color: #808000; }
+.pixel_8 { background-color: #00FF00; }
+.pixel_9 { background-color: #008000; }
+.pixel_a { background-color: #00FFFF; }
+.pixel_b { background-color: #008080; }
+.pixel_c { background-color: #0000FF; }
+.pixel_d { background-color: #000080; }
+.pixel_e { background-color: #FF00FF; }
+.pixel_f { background-color: #800080; }
+
+.place_pixel_button:hover {
+  .pixel_0 { background-color: lighten(#FFFFFF, 20%); }
+  .pixel_1 { background-color: lighten(#C0C0C0, 20%); }
+  .pixel_2 { background-color: lighten(#808080, 20%); }
+  .pixel_3 { background-color: lighten(#000000, 20%); }
+  .pixel_4 { background-color: lighten(#FF0000, 20%); }
+  .pixel_5 { background-color: lighten(#800000, 20%); }
+  .pixel_6 { background-color: lighten(#FFFF00, 20%); }
+  .pixel_7 { background-color: lighten(#808000, 20%); }
+  .pixel_8 { background-color: lighten(#00FF00, 20%); }
+  .pixel_9 { background-color: lighten(#008000, 20%); }
+  .pixel_a { background-color: lighten(#00FFFF, 20%); }
+  .pixel_b { background-color: lighten(#008080, 20%); }
+  .pixel_c { background-color: lighten(#0000FF, 20%); }
+  .pixel_d { background-color: lighten(#000080, 20%); }
+  .pixel_e { background-color: lighten(#FF00FF, 20%); }
+  .pixel_f { background-color: lighten(#800080, 20%); }
+}

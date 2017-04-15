@@ -8,8 +8,9 @@ import ReactDOM from 'react-dom'
 // import {setState} from './action_creators'
 import { PlaceCanvas } from './components/PlaceCanvas'
 
+require('./index.scss')
+
 var bitmap = require('./bitmap.json')['bitmap']
-// var bitmap = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
 
 ReactDOM.render(
   <PlaceCanvas bitmap={bitmap} />,

@@ -8,7 +8,7 @@ export function PlacePixel(props) {
     e.preventDefault(0)
   }
 
-  return <a href="#" onClick={handleClick}>
+  return <a href="#" className="place_pixel_button" onClick={handleClick}>
     <div className={className}></div>
   </a>
 }

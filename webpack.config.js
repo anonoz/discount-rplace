@@ -12,6 +12,13 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'react-hot-loader!babel-loader'
+    }, { 
+      test: /\.scss$/, 
+      loader: 'style-loader!css-loader!sass-loader',
+      // use: ExtractTextPlugin.extract({
+      //   use: ['css-loader', 'sass-loader'],
+      //   fallback: 'style-loader'
+      // })
     }]
   },
   resolve: {
@@ -27,6 +34,7 @@ module.exports = {
     hot: true
   },
   plugins: [
+    new ExtractTextPlugin("dist/index.css"),
     new webpack.HotModuleReplacementPlugin()
   ]
 }
