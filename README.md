@@ -8,8 +8,10 @@ Started working on this during Hackerspace MMU Hackathon Apr '17.
 Replicate r/place like using Redux/React (very, very poor choice of technologies).
 
 ## TODO
-[ ] Create a backend
-[ ] Improve frontend performance
+
+- [X] Create frontend POC
+- [ ] Create a backend
+- [ ] Improve frontend performance
 
 ## How to run it
 
