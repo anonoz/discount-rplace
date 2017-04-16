@@ -1,14 +1,20 @@
 import React from 'react'
+import setPixels from '../action_creators'
+
+const COLORS = "0123456789abcdef"
 
 export function PlacePixel(props) {
   const className = `place_pixel pixel_${props.color}`
 
-  function handleClick(e) {
-    console.log(`Position ${props.position} clicked`)
-    e.preventDefault(0)
+  function nextColor() {
+    return COLORS[COLORS.indexOf(props.color) + 1 % COLORS.length]
   }
 
-  return <a href="#" className="place_pixel_button" onClick={handleClick}>
-    <div className={className}></div>
-  </a>
+  return (
+    <a href="#"
+       className="place_pixel_button"
+       onClick={() => {props.setPixel(props.position, nextColor())}}>
+      <div className={className}></div>
+    </a>
+  )
 }
