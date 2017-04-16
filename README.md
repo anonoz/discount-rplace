@@ -10,3 +10,14 @@ Replicate r/place like using Redux/React (very, very poor choice of technologies
 ## TODO
 [ ] Create a backend
 [ ] Improve frontend performance
+
+## How to run it
+
+Assuming you have node.js and yarn installed.
+
+```
+$ cd into/project/path
+$ yarn
+$ webpack-dev-server
+# Goto localhost:8080
+```
